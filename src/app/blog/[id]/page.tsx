@@ -1,6 +1,6 @@
-export default async function BlogDetails(params: { params: Promise<{ id: string }> }) {
+export default async function BlogDetails({ params }: { params: Promise<{ id: string }> }) {
 
-  const { id } = await params.params;
+  const { id } = await params;
   console.log("Blog ID:", id);
 
   return (
