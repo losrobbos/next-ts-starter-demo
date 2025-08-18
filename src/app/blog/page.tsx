@@ -1,4 +1,5 @@
 export default async function BlogPage() {
+  // JSX => Ednung jsx
   return (
     <section>
       <h1>Blog</h1>

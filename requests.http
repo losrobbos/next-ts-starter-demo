@@ -1,0 +1,26 @@
+GET http://localhost:3000/api/blog
+
+
+### Post request to create a new blog post
+POST http://localhost:3000/api/blog
+Content-Type: application/json
+
+{
+  "title": "New Blog Post",
+  "content": "This is the content of the new blog post."
+}
+
+### Update request to edit an existing blog post
+PUT http://localhost:3000/api/blog/1
+Content-Type: application/json  
+Accept: application/json
+
+{
+  "title": "Updated Blog Post",
+  "content": "This is the updated content of the blog post."
+}
+
+### Delete request to remove a blog post
+DELETE http://localhost:3000/api/blog/1
+
+
